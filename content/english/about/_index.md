@@ -1,9 +1,8 @@
 ---
-title: "About Us"
-# page header background image
-page_header_bg: "images/banner/banner1.jpg"
-# meta description
-description: "This is meta description."
-# save as draft
+title: About Us
+page_header_bg: images/banner/banner1.jpg
+description: This is meta description.
 draft: false
+keywords: optical
+content: "***hi this is***"
 ---
