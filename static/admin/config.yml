@@ -6,10 +6,10 @@ collections:
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "about" # Used in the UI, ie.: "New Post"
     folder: "content/english/about" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+    create: false # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page header image", name: "page_header_bg", widget: "image" }
       - { label: "Meta description", name: "description", widget: "text" }
       - { label: "Meta Keywords", name: "keywords", widget: "text" }
-      - { label: "Main Content", name: "content", widget: "markdown" }
+      - { label: "Main Content", name: "body", widget: "markdown" }
