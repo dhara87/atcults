@@ -1,0 +1,78 @@
+{{ define "main" }}
+
+<section id="main-container" class="pt-2 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <form id="contact-form" action="{{ .Site.Params.contact_form_action }}" method="post" role="form">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Name</label>
+                <input class="form-control" name="name" id="name" placeholder="" type="text" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" name="email" id="email" placeholder="" type="email" required>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Phone</label>
+                <input class="form-control" name="phone" id="phone" placeholder="" type="number">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control" name="message" id="message" placeholder="" rows="10" required></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-right"><br>
+                <button class="btn btn-primary solid blank" type="submit">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-5">
+          <div class="contact-info">
+            <h3>{{i18n `contact_details`}}</h3>
+            {{/*  <p>{{ .Content }}</p>  */}}
+            <p>{{ .Site.Params.address | markdownify }} </p>
+            {{/*  <p><i class="fa fa-phone info"></i> {{ .Site.Params.phone | markdownify }} </p>  */}}
+            <p>{{ .Site.Params.email | markdownify }}</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Map start here -->
+    {{ if .Site.Params.map.enable }}
+    {{ with .Site.Params.map }}
+    <div class="row">
+      <div class="col-md-12">
+        <iframe src="{{ .link | relLangURL }}" 
+        height="450" style="border:0;width:100%;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    
+
+    {{/*  <div class="gap-40"></div>  */}}
+    {{ end }}
+    {{ end }}
+    <!--/ Map end here -->
+  </div>
+  <!--/ container end -->
+</section>
+
+{{ end }}

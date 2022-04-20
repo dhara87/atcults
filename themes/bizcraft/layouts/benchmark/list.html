@@ -1,0 +1,113 @@
+{{ define "main" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.benchmark.performanceloadtesting.enable }}
+{{ with $data.benchmark.performanceloadtesting }}
+<section id="image-block" class="image-block p-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{ .bg_image | absURL }}" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <div class="img-block-head">
+          <h2>{{ .title | markdownify }}</h2>
+          <h3>{{ .subtitle | markdownify }}</h3>
+          <p class="text-justify">{{ .content | markdownify }}</p>
+        </div>
+        <div class="gap-30"></div>
+        <p class="text-center">
+          {{ range .buttons }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
+          {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if $data.benchmark.pentesting.enable }}
+{{ with $data.benchmark.pentesting }}
+<section id="image-block" class="image-block p-5 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="img-block-head">
+          <h2>{{ .title | markdownify }}</h2>
+          <h3>{{ .subtitle | markdownify }}</h3>
+          <p class="text-justify">{{ .content | markdownify }}</p>
+        </div>
+        <div class="gap-30"></div>
+        <p class="text-center">
+          {{ range .buttons }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
+          {{ end }}
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="{{ .bg_image | absURL }}" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if $data.benchmark.deploymentarchreview.enable }}
+{{ with $data.benchmark.deploymentarchreview }}
+<section id="image-block" class="image-block p-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{ .bg_image | absURL }}" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <div class="img-block-head">
+          <h2>{{ .title | markdownify }}</h2>
+          <h3>{{ .subtitle | markdownify }}</h3>
+          <p class="text-justify">{{ .content | markdownify }}</p>
+        </div>
+        <div class="gap-30"></div>
+        <p class="text-center">
+          {{ range .buttons }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
+          {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+{{ if $data.benchmark.staticcodeanalysis.enable }}
+{{ with $data.benchmark.staticcodeanalysis }}
+<section id="image-block" class="image-block p-5 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="img-block-head">
+          <h2>{{ .title | markdownify }}</h2>
+          <h3>{{ .subtitle | markdownify }}</h3>
+          <p class="text-justify">{{ .content | markdownify }}</p>
+        </div>
+        <div class="gap-30"></div>
+        <p class="text-center">
+          {{ range .buttons }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
+          {{ end }}
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="{{ .bg_image | absURL }}" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{- partial "head.html" . -}}
+
+<body>
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  <section id="main-container" class="pt-3 pb-5 quotebg">
+  <div class="col-md-12">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+            <div class="card-header quoteheaderbg text-center">
+              <a href="{{ .Site.BaseURL | relLangURL }}"><img class="img-fluid"
+                src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
+            </div> 
+            <div class="pt-2">
+              <div class="row">
+                <div class="col-md-12">
+                  <form id="contact-form" action="{{ .Site.Params.contact_form_action }}" method="post" role="form" class="mt-2 ">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Deployment Platform Name</label>
+                          {{/*  <select multiple data-style="bg-white form-control px-4 py-3 w-100" class="selectpicker">
+                            <option>AWS</option>
+                            <option>Azure</option>
+                            <option>Google</option>
+                            <option>Other</option>
+                          </select>  */}}
+                          <select class="form-control">
+                            <option>Please Selct Deployment Platform Name</option>
+                            <option>AWS</option>
+                            <option>Azure</option>
+                            <option>Google</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Programming Language</label>
+                          <select class="form-control">
+                            <option>Please Selct Programming Language</option>
+                            <option>Java</option>
+                            <option>.Net</option>
+                            <option>PHP</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Framework</label>
+                          <select multiple data-style="bg-white form-control px-4 py-3 w-100" class="selectpicker" title="Please Select Framework">
+                            <option>Angualr Js</option>
+                            <option>React Js</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Mobile App</label>
+                          <br />
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">Yes
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Apis</label>
+                          <br />
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">Yes
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Web Application</label>
+                          <br />
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">Yes
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Worker Application</label>
+                          <br />
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">Yes
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="optradio">No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Number Of Pages in WebApplication</label>
+                          <select class="form-control">
+                            <option>Please Selct Number Of Pages In Web App</option>
+                            <option>5 to 10</option>
+                            <option>10 to 20</option>
+                            <option>More than 20</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Number Of Apiendpoints</label>
+                          <select class="form-control">
+                            <option>Please Selct Number Of API End Points</option>
+                            <option>5 to 10</option>
+                            <option>10 to 20</option>
+                            <option>More than 20</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Number Of Concurrent Users</label>
+                          <select class="form-control">
+                            <option>Please Selct Number Of Concurrent Users</option>
+                            <option>0 to 100</option>
+                            <option>100-1000</option>
+                            <option>1000-5000</option>
+                            <option>More than 5000</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="font-weight-bold">Development Studio</label>
+                          <select multiple data-style="bg-white form-control px-4 py-3 w-100" class="selectpicker" title="Please Select Development Studio  ">
+                            <option>Visual Studio Code</option>
+                            <option>Sublime Text</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                          <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="text-center">
+                          <button class="btn btn-primary solid blank" type="submit">Send Message</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--/ container end -->
+</section>
+<script>
+	$(function () {
+	  $('.selectpicker').selectpicker();
+	});
+</script>
+
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+</body>
+
+</html>

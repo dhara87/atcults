@@ -1,0 +1,47 @@
+<div class="body-inner">
+
+<!-- Header start -->
+<header id="header" class="fixed-top header" role="banner">
+  <a class="navbar-brand navbar-bg" href="{{ .Site.BaseURL | relLangURL }}"><img class="img-fluid float-right"
+      src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler ml-auto border-0 rounded-0 text-white" type="button" data-toggle="collapse"
+        data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.BaseURL | relLangURL }}">{{ site.Params.Home }}</a>
+          </li>
+          {{ range .Site.Menus.main }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a></a>
+          </li>
+          {{ end }}
+          <li class="nav-item mt-2">
+            {{ range .Site.Params.quote }}
+              <a class="btn btn-primary solid cd-btn" href="{{ .link | absURL }}">{{ .name }}</a>
+            {{ end }}
+          </li>
+          
+        </ul>
+        <ul class="footer-social unstyled navbar-nav ml-0 header-social">
+          <li class="d-block">
+            <a href="mailto:sales@atcults.com" target="_blank" title="Email"><span class="icon-pentagon"><i class="fa fa-envelope"></i></span></a>
+						{{ range .Site.Params.social }}
+						<a title="{{ .name }}" href="{{ .link | absURL }}" target="_blank">
+							<span class="icon-pentagon"><i class="fa {{.icon}}"></i></span>
+						</a>
+						{{ end }}
+					</li>
+          
+				</ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--/ Header end -->

@@ -1,0 +1,73 @@
+
+############################### performanceloadtesting ##################################
+performanceloadtesting:
+  enable : true
+  title : "Software Application Performance & Load Testing"
+  subtitle : "Performance & Load Testing"
+  bg_image : "images/benchmark/PerformanceandLoadTesting.jpg"
+  content : "Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor"
+  buttons:
+    # button loop
+    - label : "Get a Quote"
+      style : "solid"
+      link : "quote"
+
+############################### pentesting ##################################
+pentesting:
+  enable : true
+  title : "Penetration Testing"
+  subtitle : "Pen Testing"
+  bg_image : "images/benchmark/PenTesting.jpg"
+  content : "Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor"
+  buttons:
+    # button loop
+    - label : "Get a Quote"
+      style : "solid"
+      link : "quote"
+  
+
+############################### deploymentarchreview ##################################
+deploymentarchreview:
+  enable : true
+  title : "Deployment Architechture Review"
+  subtitle : "Deployment Arch Review"
+  bg_image : "images/benchmark/DeploymentArchReview.jpg"
+  content : "Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor"
+  buttons:
+    # button loop
+    - label : "Get a Quote"
+      style : "solid"
+      link : "quote"  
+
+############################### staticcodeanalysis ##################################
+staticcodeanalysis:
+  enable : true
+  title : "Static Code Analysis"
+  subtitle : "Static Code Analysis"
+  bg_image : "images/benchmark/StaticCodeAnalysis.jpg"
+  content : "Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor"
+  buttons:
+    # button loop
+    - label : "Get a Quote"
+      style : "solid"
+      link : "quote"

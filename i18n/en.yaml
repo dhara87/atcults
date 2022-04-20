@@ -1,0 +1,71 @@
+- id: recent_post
+  translation: Recent Posts
+
+- id: blog_categories
+  translation: Blog Categories
+
+- id: popular_tags
+  translation: Popular Tags
+
+- id: flickr_photos
+  translation: Flickr Photos
+
+- id: contactdetails
+  translation: Ahmedabad India
+
+- id: continue_reading
+  translation: Continue Reading
+
+- id: name
+  translation: Name
+
+- id: email
+  translation: Email
+
+- id: phone
+  translation: Phone
+
+- id: subject
+  translation: Subject
+
+- id: message
+  translation: Message
+
+- id: send_message
+  translation: Send Message
+
+- id: contact_details
+  translation: Ahmedabad India
+
+- id: deploymentplatformname
+  translation: Deployment Platform Name
+
+- id: programminglanguage
+  translation: Programming Language  
+
+- id: frameworkandlibraries
+  translation: Framework and Libraries  
+
+- id: mobileapp
+  translation: Mobile App  
+
+- id: apis
+  translation: APIs
+
+- id: webapplication
+  translation: Web Application
+
+- id: workerapplication
+  translation: Worker Application
+
+- id: numberofpagesinwebapplication
+  translation: Number Of Pages In Web Application
+
+- id: numberofapiendpoints
+  translation: Number Of API End Points
+
+- id: numberofconcurrentusers
+  translation: Number Of Concurrent Users  
+
+- id: developmentstudio
+  translation: Development Studio

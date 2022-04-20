@@ -1,0 +1,32 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.homepage.testimonial }}
+<section class="testimonial parallax pt-5 pb-5" style="background-image: url('{{ .bg_image | absURL}}');">
+  <div class="parallax-overlay" style="background:#fff;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 ">
+        <div class="text-center">
+          <h3 class="text-center mb-0">{{ .subtitle | markdownify }}</h3>
+        </div>
+        
+      </div>
+      <div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
+        {{ range .testimonial_item }}
+        <div class="item">
+          <div class="testimonial-thumb">
+            <!--<img src="{{ .image | absURL }}" alt="testimonial">-->
+          </div>
+          <div class="testimonial-content">
+            <p class="testimonial-text">{{ .content | markdownify }}</p>
+            <h3 class="name">{{ .name | markdownify }}<span>{{.designation | markdownify}}</span></h3>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!--/ Testimonial carousel end-->
+    </div>
+    <!--/ Row end-->
+  </div>
+  <!--/  Container end-->
+</section>
+{{ end }}

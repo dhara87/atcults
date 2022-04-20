@@ -1,0 +1,249 @@
+######################## default configuration ####################
+baseURL = "/"
+title = "Atcults | Sculpting Online Presence"
+theme = "bizcraft"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# disqus short name
+disqusShortname = "#" # get your shortname form here : https://disqus.com
+
+
+############################# Outputs ##############################
+[outputs]
+home = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+unsafe= true
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/fontawesome/font-awesome.min.css"
+[[params.plugins.css]]
+link = "plugins/animate.css"
+[[params.plugins.css]]
+link = "plugins/prettyPhoto.css"
+[[params.plugins.css]]
+link = "plugins/owl/owl.carousel.css"
+[[params.plugins.css]]
+link = "plugins/owl/owl.theme.css"
+[[params.plugins.css]]
+link = "plugins/flex-slider/flexslider.css"
+[[params.plugins.css]]
+link = "plugins/cd-hero/cd-hero.css"
+[[params.plugins.css]]
+link = "plugins/bootstrap-multiselect/bootstrap-select.min.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/style-switcher.js"
+[[params.plugins.js]]
+link = "plugins/owl/owl.carousel.js"
+[[params.plugins.js]]
+link = "plugins/jquery.prettyPhoto.js"
+[[params.plugins.js]]
+link = "plugins/flex-slider/jquery.flexslider.js"
+[[params.plugins.js]]
+link = "plugins/cd-hero/cd-hero.js"
+[[params.plugins.js]]
+link = "plugins/isotope.js"
+[[params.plugins.js]]
+link = "plugins/ini.isotope.js"
+[[params.plugins.js]]
+link = "plugins/wow.min.js"
+[[params.plugins.js]]
+link = "plugins/jquery.easing.1.3.js"
+[[params.plugins.js]]
+link = "plugins/jquery.counterup.min.js"
+[[params.plugins.js]]
+link = "plugins/waypoints.min.js"
+[[params.plugins.js]]
+link = "plugins/recaptcha/api.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap-multiselect/bootstrap-select.min.js"
+
+
+############################## English navigation ###############################
+
+# [[Languages.en.menu.main]]
+# name = "Benchmark"
+# URL = "benchmark"
+# weight = 2
+
+[[Languages.en.menu.main]]
+name = "Team"
+URL = "team"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Career"
+URL = "career"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 4
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Atcults"
+# contact info
+address = "B-1001 Empire Business Hub, <br> Science City Road , Ahmedabad - 380060 , <br> Gujarat, India"
+phone = "+211234565523"
+email = "info@atcults.com"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# copyright
+copyright = "© Copyright 2022 [Atcults](https://atcults.com/). All rights reserved"
+
+# flickr photos
+[[params.flickr_photos]]
+image = "images/gallery/1.jpg"
+[[params.flickr_photos]]
+image = "images/gallery/2.jpg"
+[[params.flickr_photos]]
+image = "images/gallery/3.jpg"
+[[params.flickr_photos]]
+image = "images/gallery/4.jpg"
+[[params.flickr_photos]]
+image = "images/gallery/5.jpg"
+[[params.flickr_photos]]
+image = "images/gallery/6.jpg"
+[[params.flickr_photos]]
+image = "images/gallery/7.jpg"
+[[params.flickr_photos]]
+image = "images/gallery/8.jpg"
+[[params.flickr_photos]]
+image = "images/gallery/9.jpg"
+
+# google map
+[params.map]
+enable = true
+link = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.655573908831!2d72.51110675089025!3d23.073085584853473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9d3929304df7%3A0x8c7f30f055679e4a!2sEmpire%20business%20hub!5e0!3m2!1sen!2sin!4v1643983262128!5m2!1sen!2sin"
+
+  
+############################# social site ########################
+[[params.quote]]
+name = "get a quote"
+link = "quote"
+
+[[params.privacypolicy]]
+name = "Privacy Policy"
+link = "privacypolicy"
+
+[[params.social]]
+name = "facebook"
+icon = "fa-facebook" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+link = "https://www.facebook.com/atcultspvtltd"
+
+[[params.social]]
+name = "twitter"
+icon = "fa-twitter" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+link = "https://twitter.com/atcults"
+
+[[params.social]]
+name = "linkedin"
+icon = "fa-linkedin" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+link = "https://www.linkedin.com/in/atcultsindia/"
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+# footer content
+footer_content = "We are a awward winning multinational company. We believe in quality and standard worldwide."
+# copyright
+copyright = "© Copyright 2022 [Atcults](https://atcults.com/). All rights reserved "
+
+
+################################### Deployment Script #####################################
+
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+order = [".jpg$", ".gif$"]
+
+# [[deployment.targets]]
+# An arbitrary name for this target.
+# name = "awsdeploy"
+# The Go Cloud Development Kit URL to deploy to. Examples:
+# GCS; see https://gocloud.dev/howto/blob/#gcs
+# URL = "gs://<Bucket Name>"
+
+#[[deployment.targets]]
+# An arbitrary name for this target.
+# name = "awsdeploy"
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+# URL = "s3://<Bucket Name>?region=<AWS region>"
+
+# Azure Blob Storage; see https://gocloud.dev/howto/blob/#azure
+# URL = "azblob://$web"
+
+# You can use a "prefix=" query parameter to target a subfolder of the bucket:
+# URL = "gs://<Bucket Name>?prefix=a/subfolder/"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+# cloudFrontDistributionID = <ID>
+
+[[deployment.targets]]
+ name = "awsdeploy"
+ URL = "s3://atcultsbeta?region=ap-south-1"
+ cloudFrontDistributionID = "EEU5QY8VOOF3L"
+
+# Optionally, you can include or exclude specific files.
+# See https://godoc.org/github.com/gobwas/glob#Glob for the glob pattern syntax.
+# If non-empty, the pattern is matched against the local path.
+# All paths are matched against in their filepath.ToSlash form.
+# If exclude is non-empty, and a local or remote file's path matches it, that file is not synced.
+# If include is non-empty, and a local or remote file's path does not match it, that file is not synced.
+# As a result, local files that don't pass the include/exclude filters are not uploaded to remote,
+# and remote files that don't pass the include/exclude filters are not deleted.
+# include = "**.html" # would only include files with ".html" suffix
+# exclude = "**.{jpg, png}" # would exclude files with ".jpg" or ".png" suffix
+
+# [[deployment.matchers]] configure behavior for files that match the Pattern.
+# See https://golang.org/pkg/regexp/syntax/ for pattern syntax.
+# Pattern searching is stopped on first match.
+
+# Samples:
+
+[[deployment.matchers]]
+# Cache static assets for 1 year.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+# Set custom content type for /sitemap.xml
+pattern = "^sitemap\\.xml$"
+contentType = "application/xml"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true

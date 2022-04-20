@@ -1,0 +1,28 @@
+career:
+  ########################## career item loop ##########################
+  - title : "Software Application Performance & Load Tester"
+    career_item:
+      # about item loop
+      - heading : "Must Have"
+        subcontent : "<br> 1. Clear Programming concepts (CORE JAVA) <br>
+        2. Hands-on experience on performance testing using JMeter and able to automate complex performance scenarios and run it, <br>
+        3. Able to understand complex business requirements and independently identify non-functional scenarios, <br>
+        4. Able to scale JMeter script and execute through multiple machine on NON-GUI mode [Distributed], <br>
+        5. Able to generate different types of reports as required <br>
+        6. Good understanding about report analysis <br>
+        7. 4+ Years of experience <br>
+        8. Must be willing to work from Ahmedabad city"
+
+      # about item loop
+      - heading : "Good to Have"
+        subcontent : "<br> 1. Knowledge of Groovy/python script <br>
+                      2. Knowledge of how to work with different networking protocols such as HTTP/HTTPS/FTP/TCP/etc. <br>
+                      3. Knowledge of different listener’s of JMeter <br>
+                      4. Knowledge of the containerized environment. (Run JMX scripts from different containers)"  
+
+    buttons:
+      # button loop
+      - label : "Apply now"
+        style : "solid"
+        link : ""
+        

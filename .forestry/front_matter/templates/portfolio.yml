@@ -1,0 +1,31 @@
+---
+label: Portfolio
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: page_header_bg
+  label: page header bg image
+- type: image_gallery
+  name: images
+  label: images
+- type: text
+  name: clients
+  label: clients
+- type: list
+  name: types
+  label: filter categories
+- type: list
+  name: skills
+  label: skills
+- type: text
+  name: project_link
+  label: project_link
+- type: text
+  name: description
+  label: description

@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.privacypolicy.privacypolicy.enable }}
+{{ with $data.privacypolicy.privacypolicy }}
+<section id="image-block" class="image-block p-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-7">
+        <div class="privacypolicy text-center">
+          <h3 class="privacypolicytitle">{{ .subtitle | markdownify }}</h3>
+          <p class="text-justify">{{ .content}}</p>
+          {{ range .privacypolicy_item }}
+            <h3 class="text-justify">{{ .heading | markdownify }}</h3>
+            <h4 class="text-justify">{{ .subheading | markdownify }}</h4>
+            <p class="text-justify">{{ .subcontent | markdownify }}</p>
+            {{ range .privacypolicysub_item }}
+              <h4 class="text-justify">{{ .psubheading | markdownify }}</h4>
+              <p class="text-justify">{{ .psubcontent | markdownify }}</p>
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="gap-30"></div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}
+

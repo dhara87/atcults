@@ -1,0 +1,91 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<section id="main-container">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        {{ range $data.career.career }}
+        <h3 class="title-border">{{ .title | markdownify }}</h3>
+        {{ range .career_item }}
+          <h3 class="text-justify mb-0 pb-0">{{ .heading | markdownify }}</h3>
+          <p class="text-justify"><span>{{ .subcontent | markdownify }}</span></p>
+        {{ end }}
+        <p class="text-center">
+          {{ range .buttons }}
+          <a href="" class="btn btn-primary {{.style}}" data-toggle="modal" data-target="#ModalLoginForm">{{ .label }} <i class="fa fa-long-arrow-right"></i></a>
+          {{ end }}
+        </p>
+        {{ end }}
+      </div>
+      <!--/ Content col end -->
+    </div>
+    
+  </div>
+  
+
+  <!-- Modal HTML Markup -->
+<div id="ModalLoginForm" class="modal fade">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title w-100 font-weight-bold">Apply</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form role="form" method="post" action="">
+                  <div class="form-group">
+                    <label class="control-label">First Name</label>
+                    <div>
+                        <input type="text" class="form-control input-lg" name="name" value="" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Last Name</label>
+                    <div>
+                        <input type="text" class="form-control input-lg" name="name" value="" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label">E-Mail Address</label>
+                      <div>
+                          <input type="email" class="form-control input-lg" name="email" value="" required>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label">Mobile Number</label>
+                      <div>
+                          <input type="Number" class="form-control input-lg" name="number" value="" required>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">File Upload</label>
+                    <div>
+                        <input type="file" class="form-control input-lg" name="file" value="">
+                    </div>
+                </div>
+                  <div class="form-group">
+                    <div>
+                      <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                      <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                  <div class="form-group">
+                      <div class="text-center">
+                          <button type="submit" class="btn btn-primary solid">Submit</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+</section>
+
+{{ end }}
