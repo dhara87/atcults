@@ -3,12 +3,12 @@ backend:
   branch: master
 media_folder: "static/images"
 collections:
-  - name: "aboutus" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "about us" # Used in the UI, ie.: "New Post"
-    folder: "content/english/aboutus" # The path to the folder where the documents are stored
+  - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "about" # Used in the UI, ie.: "New Post"
+    folder: "content/english/about" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page header image", name: "page_header_bg", widget: "image" }
-      - { label: "Meta description", name: "metadescription", widget: "text" }
-      - { label: "About title", name: "abouttitle", widget: "string" }
+      - { label: "Meta description", name: "description", widget: "text" }
+      
